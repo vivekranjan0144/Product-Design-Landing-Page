@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111111;
+}
+
+/* ---------------------------------------------------------- */
+/* -----------------------NavBar----------------------------- */
+/* ---------------------------------------------------------- */
+
+.nav {
+    display: flex;
+    padding: 2em 4em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo , .footer-logo-img {
+    width: 6em;
+}
+
+.nav-lists {
+    width: 40vw;
+    display: flex;
+    margin-right: 12em;
+    justify-content: space-between;
+}
+
+.nav-lists a {
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.nav-lists a:hover {
+    color: #EC4040;
+}
+
+.nav-lists a:hover .caret {
+    color: #8a2be2;
+}
+
+.caret {
+    font-size: 1.2em;
+    margin-left: 0.4em;
+}
+
+/* ---------------------------------------------------------- */
+/* ------------------------Home------------------------------ */
+/* ---------------------------------------------------------- */
+
+.home {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 40em;
+}
+
+.intro {
+    display: flex;
+    color: #F5F5F5;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.intro h3 {
+    color: #EB3144;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: -0.5em;
+}
+
+.intro h1 {
+    font-size: 5rem;
+}
+
+.intro p {
+    width: 32em;
+    font-size: 1.1rem;
+}
+
+.intro a {
+    margin-top: 2em;
+    color: #F5F5F5;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    padding: 0.6em 2em;
+    text-decoration: none;
+    background-color: #C91C28;
+}
+
+.intro a:hover {
+    color: #C91C28;
+    background-color: #F5F5F5;
+}
+
+/* ---------------------------------------------------------- */
+/* -----------------------Skill------------------------------ */
+/* ---------------------------------------------------------- */
+
+.skills {
+    position: relative;
+}
+
+.half-color {
+    top: -16%;
+    z-index: -1;
+    width: 50vw;
+    height: 136vh;
+    position: absolute;
+    background-color: #181818;
+}
+
+.skill-card-container {
+    gap: 2em;
+    display: flex;
+    margin-top: 8em;
+    justify-content: center;
+}
+
+.skill-card {
+    gap: 1.8em;
+    width: 24em;
+    padding: 3em;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #C91C28;
+}
+
+.skill-card:first-child , .skill-card:last-child {
+    background-color: #1E1E1E;
+}
+
+.skill-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.skill-card h3 {
+    color: #EC4040;
+}
+
+.know-btn-active {
+    color: #FFFFFF !important;
+}
+
+.skill-card p {
+    font-size: 1.3rem;
+}
+
+.arrow {
+    margin-left: 0.4em;
+}
+
+.experience-container {
+    width: 76vw;
+    display: flex;
+    color: #ffffff;
+    margin: 8em auto;
+    justify-content: space-between;
+}
+
+.yr-exp {
+    margin-left: 3em;
+    text-align: center;
+}
+
+.yr-exp p:first-child {
+    font-size: 7rem;
+    color: #EC4040;
+    font-weight: 900;
+    margin-top: 0.2em;
+}
+
+.yr-exp p:last-child {
+    margin-top: -1em;
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.exp-card-container {
+    gap: 1em;
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.exp-card {
+    width: 24em;
+    padding-block: 1em;
+    background-color: #1E1E1E;
+}
+
+.exp-card p:first-child {
+    color: #EC4040;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.exp-card p:last-child {
+    font-weight: 300;
+    margin-top: -1em;
+    font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------- */
+/* --------------------Project-Section----------------------- */
+/* ---------------------------------------------------------- */
+
+.project-heading-container {
+    width: 76vw;
+    display: flex;
+    color: #ffffff;
+    margin: 2em auto;
+    padding-block: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-heading h1 {
+    font-size: 2.2rem;
+}
+
+.btn {
+    color: #F5F5F5;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    padding: 0.6em 2em;
+    text-decoration: none;
+    background-color: #EB3144;
+}
+
+.btn:hover {
+    color: #EB3144;
+    background-color: #F5F5F5;
+}
+
+.project-card-container {
+    gap: 2.2em;
+    width: 75vw;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-img {
+    width: 36em;
+    padding: 4em 2em;
+    background-color: #1E1E1E;
+}
+
+.project-img-3 {
+    width: 31.2em;
+}
+
+.project-card {
+    color: #FFFFFF;
+}
+
+.project-card h1 {
+    margin-top: 1em;
+}
+
+.project-card h3 {
+    color: #EC4040;
+}
+
+/* ---------------------------------------------------------- */
+/* ------------------Work-Together-Section------------------- */
+/* ---------------------------------------------------------- */
+
+.work-together-container {
+    width: 75vw;
+    padding: 4em;
+    display: flex;
+    margin: 6em auto;
+    align-items: center;
+    background-color: #1E1E1E;
+    justify-content: space-between;
+}
+
+.work-together  {
+    width: 40vw;
+}
+
+.work-together h1 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+.work-together p {
+    margin-top: 1em;
+    color: #c7c7c7;
+    font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------- */
+/* --------------------Footer-Section------------------------ */
+/* ---------------------------------------------------------- */
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    margin-left: 4em;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #EC4040;
+}
+
+.footer-logo {
+    display: flex;
+    padding: 2.4em;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+.social-links {
+    gap: 3em;
+    width: 68vw;
+    display: flex;
+    margin-right: 2em;
+    justify-content: center;
+}
+
+.social {
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------- */
